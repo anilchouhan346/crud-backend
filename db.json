@@ -6,6 +6,13 @@
             "email":"rahul.vhits@gmail.com",
             "password":"rahul@123",
             "mobile":"9977149959"
+        },
+        {
+            "id":2,
+            "name":"anil",
+            "email":"anil.vhits@gmail.com",
+            "password":"anil@123",
+            "mobile":"9977149959"
         }
     ]
 }
