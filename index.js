@@ -11,12 +11,12 @@ const port = process.env.PORT || 8080;
 server.use(middlewares);
 
 // Serve images from the 'images' folder
-server.use("/images", express.static(path.join(__dirname, "images")));
+server.use("/image", express.static(path.join(__dirname, "image")));
 
 // Custom route to handle image requests
 server.get("/image/:imageName", (req, res) => {
   const { imageName } = req.params;
-  const imagePath = path.join(__dirname, "images", imageName);
+  const imagePath = path.join(__dirname, "image", imageName);
 
   res.sendFile(imagePath);
 });
